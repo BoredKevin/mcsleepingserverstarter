@@ -37,7 +37,7 @@ export class SleepingMcJava implements ISleepingServer {
             // host: '0.0.0.0',
         });
 
-        this.logger.info(`[McJava] Waiting for a Prince to come. [${this.settings.serverPort}] Or someone to type quit.`);
+        this.logger.info(`[McJava] Waiting for a Prince to come. [${this.settings.serverPort}] Or someone to type stop.`);
 
         this.server.on('connection', (client: Client) => {
             // @ts-ignore FixMe ToDo not exported in TS
